@@ -1,0 +1,20 @@
+API Notes: SearchKit framework
+==============================
+
+The full API is described in `Apple's documentation`__, both
+the C and Objective-C APIs are available (but see the `API Notes`_ below).
+
+.. __: https://developer.apple.com/reference/coreservices/1654560-searchkit?language=objc
+
+These bindings are accessed through the ``SearchKit`` package (that is, ``import SearchKit``).
+
+
+API Notes
+---------
+
+
+SKIndexClose
+............
+
+Do not call this function, the garbage collector will automaticly close the index
+when it is no longer needed.

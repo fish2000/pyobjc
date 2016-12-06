@@ -1,0 +1,19 @@
+API Notes: Social framework
+===========================
+
+
+The full API is described in `Apple's documentation`__, both
+the C and Objective-C APIs are available (but see the `API Notes`_ below).
+
+.. __: https://developer.apple.com/reference/social/
+
+These bindings are accessed through the ``Social`` package (that is, ``import Social``).
+
+API Notes
+---------
+
+The entire "Social" framework on MacOSX 10.8 (or later) is available from Python.
+
+.. note::
+
+   This framework is 64-bit only.
