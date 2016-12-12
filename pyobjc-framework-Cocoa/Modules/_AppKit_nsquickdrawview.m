@@ -1,14 +1,12 @@
 
 #if !defined(__LP64__) && PY_MAJOR_VERSION == 2 && defined(USE_TOOLBOX_OBJECT_GLUE)
-    /* Quickdraw only exists in 32-bit mode. We do define a dummy
-     * init function to avoid breaking the Python module.
-     *
-     * Don't include pymactoolbox.h due to build issues with the 10.12 SDK.
-     */
-
+/* As of OSX 10.12 pymactoolbox includes a file that
+ * is not longer present, therefore inline the
+ * declarations we use instead of using the pymactoolbox.h
+ * header file.
+ */
 extern PyObject *GrafObj_New(GrafPtr);
 extern int GrafObj_Convert(PyObject *, GrafPtr *);
-
 
 
 static PyObject*
