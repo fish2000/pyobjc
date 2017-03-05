@@ -9,7 +9,7 @@ Version 3.3
 New features:
 
 * Updated framework wrappers for the API changes in the SDK shipped with
-  Xcode 8.3(beta 2)
+  Xcode 8.3(beta 3)
 
 Bugfixes:
 
@@ -20,6 +20,10 @@ Bugfixes:
 * Issue #182: The block signature registered in the ObjC runtime
   datastructures for Python blocks was wrong, which confuses Objective-C
   code that looks at the runtime data.
+
+* Fix requirement info in Collaboration setup.py.
+
+  Patch by Alex Chekunkov.
 
 
 Version 3.2.2
